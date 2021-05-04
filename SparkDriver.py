@@ -202,13 +202,10 @@ if __name__ == '__main__':
 
         feasible_integer_found, solver_success, inst = column_generation(instance)
         if inst is not None:
-            print("dwdefcefeefe")
             return inst
         if not feasible_integer_found and solver_success:
-            print("dwdefcefeefe2")
             return branch(instance)
         else:
-            print("dwdefcefeefe3")
             return None
 
 
